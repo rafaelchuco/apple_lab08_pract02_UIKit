@@ -68,10 +68,12 @@ class CalculatorController: UIViewController {
     func mostrarResultados() {
         guard let calculo = calculoActual else { return }
         
-        let resultadoViewController = ResultadoController()
-        resultadoViewController.calculo = calculo
-        
-        navigationController?.pushViewController(resultadoViewController, animated: true)
+        // ✅ Cargar desde storyboard correctamente
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        if let resultadoVC = storyboard.instantiateViewController(withIdentifier: "ResultadoController") as? ResultadoController {
+            resultadoVC.calculo = calculo
+            navigationController?.pushViewController(resultadoVC, animated: true)
+        }
     }
     
     func mostrarAlerta(mensaje: String) {

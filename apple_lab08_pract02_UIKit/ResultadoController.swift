@@ -43,24 +43,25 @@ class ResultadoController: UIViewController {
     @IBAction func compartirTapped(_ sender: UIButton) {
         guard let calculo = calculo else { return }
         
-        let mensaje = "\(Int(calculo.primerNumero)) \(obtenerSimbolo(calculo.operacion)) \(Int(calculo.segundoNumero)) = \(Int(calculo.resultado))"
+        // ✅ Símbolo dinámico según la operación
+        let simbolo: String
         
-        let actividadViewController = UIActivityViewController(activityItems: [mensaje], applicationActivities: nil)
-        present(actividadViewController, animated: true)
+        switch calculo.operacion {
+        case .suma:
+            simbolo = "+"
+        case .resta:
+            simbolo = "-"
+        case .multiplicacion:
+            simbolo = "×"
+        }
+        
+        let mensaje = "\(Int(calculo.primerNumero)) \(simbolo) \(Int(calculo.segundoNumero)) = \(Int(calculo.resultado))"
+        
+        let actividadVC = UIActivityViewController(activityItems: [mensaje], applicationActivities: nil)
+        present(actividadVC, animated: true)
     }
     
     @IBAction func nuevoCalculoTapped(_ sender: UIButton) {
         navigationController?.popViewController(animated: true)
-    }
-    
-    func obtenerSimbolo(_ operacion: Calculo.Operacion) -> String {
-        switch operacion {
-        case .suma:
-            return "+"
-        case .resta:
-            return "-"
-        case .multiplicacion:
-            return "×"
-        }
     }
 }

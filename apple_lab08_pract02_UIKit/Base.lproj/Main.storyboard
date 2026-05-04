@@ -101,7 +101,22 @@
             </objects>
             <point key="canvasLocation" x="1902" y="717"/>
         </scene>
-        <!--Item-->
+        <!--Resultado Controller-->
+        <scene sceneID="rIE-Ij-NSN">
+            <objects>
+                <viewController storyboardIdentifier="ResultadoController" id="eZ4-DR-ng5" customClass="ResultadoController" customModule="apple_lab08_pract02_UIKit" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ro7-a4-8Sm">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="Rrd-Jf-Zbp"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="uXj-d3-KYu"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xHc-qQ-drr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2711" y="717"/>
+        </scene>
         <scene sceneID="Rn2-z6-mBI">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="zwW-NK-4Bs" sceneMemberID="viewController">
