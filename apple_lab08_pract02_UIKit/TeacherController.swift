@@ -25,7 +25,7 @@ class TeacherController: UIViewController, UITableViewDataSource, UITableViewDel
     
     func cargarProfesores() {
         profesores = [
-            Profesor(nombre: "Elliot GAramendi"),
+            Profesor(nombre: "Elliot Garamendi"),
             Profesor(nombre: "Hugo Torrico"),
             Profesor(nombre: "Jaime Farfan" ),
             Profesor(nombre: "Juan Leon"),
