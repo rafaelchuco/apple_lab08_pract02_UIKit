@@ -36,7 +36,6 @@ class TeacherController: UIViewController, UITableViewDataSource, UITableViewDel
         ]
     }
     
-    // MARK: - TableView DataSource Methods
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return profesores.count
     }
