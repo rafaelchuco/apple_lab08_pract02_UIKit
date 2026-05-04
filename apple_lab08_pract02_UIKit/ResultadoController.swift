@@ -19,7 +19,7 @@ class ResultadoController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        title = "Result"
+        title = "Resultado"
         
         mostrarResultados()
         configurarBotones()
@@ -35,7 +35,7 @@ class ResultadoController: UIViewController {
     }
     
     func configurarBotones() {
-        nuevoCalculoButton?.setTitle("New Calculation", for: .normal)
+        nuevoCalculoButton?.setTitle("Nueva Operacion", for: .normal)
     }
     
     @IBAction func nuevoCalculoTapped(_ sender: UIButton) {

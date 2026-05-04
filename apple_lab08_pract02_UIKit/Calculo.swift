@@ -9,9 +9,9 @@ import UIKit
 
 class Calculo {
     enum Operacion: String {
-        case suma = "Addition (+)"
-        case resta = "Subtraction (-)"
-        case multiplicacion = "Multiplication (×)"
+        case suma = "Suma (+)"
+        case resta = "Resta (-)"
+        case multiplicacion = "Multiplicacion (×)"
     }
     
     let primerNumero: Double

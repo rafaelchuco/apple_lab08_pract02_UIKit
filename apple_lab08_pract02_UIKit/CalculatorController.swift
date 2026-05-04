@@ -26,9 +26,9 @@ class CalculatorController: UIViewController {
     func configurarUI() {
         // Configurar segmented control
         if operacionSegmentedControl?.numberOfSegments == 0 {
-            operacionSegmentedControl?.insertSegment(withTitle: "Addition (+)", at: 0, animated: false)
-            operacionSegmentedControl?.insertSegment(withTitle: "Subtraction (-)", at: 1, animated: false)
-            operacionSegmentedControl?.insertSegment(withTitle: "Multiplication (×)", at: 2, animated: false)
+            operacionSegmentedControl?.insertSegment(withTitle: "Suma (+)", at: 0, animated: false)
+            operacionSegmentedControl?.insertSegment(withTitle: "Resta (-)", at: 1, animated: false)
+            operacionSegmentedControl?.insertSegment(withTitle: "Multiplicacion (×)", at: 2, animated: false)
             operacionSegmentedControl?.selectedSegmentIndex = 0
         }
         
@@ -68,7 +68,7 @@ class CalculatorController: UIViewController {
     func mostrarResultados() {
         guard let calculo = calculoActual else { return }
         
-        // ✅ Cargar desde storyboard correctamente
+        //  Cargar desde storyboard correctamente
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         if let resultadoVC = storyboard.instantiateViewController(withIdentifier: "ResultadoController") as? ResultadoController {
             resultadoVC.calculo = calculo
