@@ -9,14 +9,9 @@ import UIKit
 
 class Profesor {
     let nombre: String
-    let departamento: String
-    let iniciales: String
-    let color: UIColor
+
     
-    init(nombre: String, departamento: String, iniciales: String, color: UIColor) {
+    init(nombre: String) {
         self.nombre = nombre
-        self.departamento = departamento
-        self.iniciales = iniciales
-        self.color = color
     }
 }

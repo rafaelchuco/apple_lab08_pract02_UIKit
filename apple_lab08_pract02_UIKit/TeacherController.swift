@@ -25,14 +25,14 @@ class TeacherController: UIViewController, UITableViewDataSource, UITableViewDel
     
     func cargarProfesores() {
         profesores = [
-            Profesor(nombre: "John Doe", departamento: "Mathematics", iniciales: "JD", color: UIColor(red: 0.8, green: 0.9, blue: 1.0, alpha: 1.0)),
-            Profesor(nombre: "Anna Smith", departamento: "Physics", iniciales: "AS", color: UIColor(red: 1.0, green: 0.84, blue: 0.6, alpha: 1.0)),
-            Profesor(nombre: "Robert Johnson", departamento: "Chemistry", iniciales: "RJ", color: UIColor(red: 0.8, green: 1.0, blue: 0.8, alpha: 1.0)),
-            Profesor(nombre: "Maria Brown", departamento: "Biology", iniciales: "MB", color: UIColor(red: 0.9, green: 0.85, blue: 1.0, alpha: 1.0)),
-            Profesor(nombre: "David Wilson", departamento: "History", iniciales: "DW", color: UIColor(red: 1.0, green: 0.8, blue: 0.85, alpha: 1.0)),
-            Profesor(nombre: "Emily Garcia", departamento: "English", iniciales: "EG", color: UIColor(red: 0.9, green: 0.85, blue: 1.0, alpha: 1.0)),
-            Profesor(nombre: "Thomas Martinez", departamento: "Computer Science", iniciales: "TM", color: UIColor(red: 0.8, green: 1.0, blue: 1.0, alpha: 1.0)),
-            Profesor(nombre: "Laura Taylor", departamento: "Art", iniciales: "LT", color: UIColor(red: 1.0, green: 0.9, blue: 0.7, alpha: 1.0))
+            Profesor(nombre: "Elliot GAramendi"),
+            Profesor(nombre: "Hugo Torrico"),
+            Profesor(nombre: "Jaime Farfan" ),
+            Profesor(nombre: "Juan Leon"),
+            Profesor(nombre: "Jaime Farfan"),
+            Profesor(nombre: "Silvia Montoya"),
+            Profesor(nombre: "Edwin Humberto"),
+            Profesor(nombre: "Theobaldo Dias")
         ]
     }
     
@@ -46,7 +46,6 @@ class TeacherController: UIViewController, UITableViewDataSource, UITableViewDel
         let profesor = profesores[indexPath.row]
         
         cell.textLabel?.text = profesor.nombre
-        cell.detailTextLabel?.text = profesor.departamento
         
         return cell
     }
